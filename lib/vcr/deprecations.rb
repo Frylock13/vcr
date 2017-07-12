@@ -56,10 +56,6 @@ module VCR
     #   end
     #
     module Macros
-      def self.extended(base)
-        Kernel.warn "WARNING: VCR::RSpec::Macros is deprecated. Use RSpec metadata options instead `:vcr => vcr_options`"
-      end
-
       # Sets up a `before` and `after` hook that will insert and eject a
       # cassette, respectively.
       #
